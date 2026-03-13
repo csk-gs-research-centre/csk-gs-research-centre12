@@ -4,150 +4,224 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CSK GS Research Centre</title>
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6fb;color:#333}
-header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:white;padding:40px 20px;text-align:center}
-header h1{margin:5px 0;font-size:34px}
-nav{margin-top:15px}
-nav a{color:white;text-decoration:none;margin:0 14px;font-weight:bold}
-section{padding:50px 20px;max-width:1100px;margin:auto}
-.title{color:#1e3a8a;margin-bottom:20px;font-size:26px}
+body{margin:0;font-family:Arial;background:#f4f6fb;color:#333}
+header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:white;text-align:center;padding:40px 20px}
+nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold}
+section{padding:50px 20px;max-width:1200px;margin:auto}
+.title{color:#1e3a8a;font-size:28px;margin-bottom:20px}
 .card{background:white;padding:25px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
-.courses,.results,.tests,.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.course,.result,.test,.note{padding:20px;border-radius:10px}
-.course{background:#eef2ff}
-.result{background:#dcfce7;font-weight:bold}
-.test{background:#fef3c7}
-.note{background:#e0f2fe}
-.youtube{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:20px}
-iframe{width:100%;height:200px;border:none;border-radius:10px}
-input,textarea{width:100%;padding:12px;margin-top:10px;border:1px solid #ccc;border-radius:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.course{background:#eef2ff;padding:20px;border-radius:10px}
+.result{background:#dcfce7;padding:18px;border-radius:10px;font-weight:bold}
+.note{background:#e0f2fe;padding:18px;border-radius:10px}
+.current-item{background:#fef3c7;padding:16px;border-radius:10px}
+.gallery img{width:100%;border-radius:10px}
+.playlists{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:25px;margin-top:25px}
+iframe{width:100%;height:320px;border:none;border-radius:10px}
+.youtube-btn{display:inline-block;background:#ff0000;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold}
+input,textarea,select{width:100%;padding:12px;margin-top:10px;border:1px solid #ccc;border-radius:6px}
 button{margin-top:10px;background:#1e3a8a;color:white;border:none;padding:10px 16px;border-radius:6px;cursor:pointer}
-footer{background:#020617;color:white;text-align:center;padding:30px;margin-top:40px}
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold}
+footer{background:#020617;color:white;text-align:center;padding:30px;margin-top:40px}
+#adminPanel{display:none;margin-top:40px}
+.admin-box{background:#fff7ed;padding:20px;border-radius:10px;margin-top:20px}
+.pricing{background:#ecfeff;padding:20px;border-radius:10px}
 </style>
 </head>
 <body><header>
 <h1>CSK GS Research Centre</h1>
-<p>Director: Chhotan Prasad</p>
+<p>Director : Chhotan Prasad</p>
 <nav>
 <a href="#about">About</a>
 <a href="#courses">Courses</a>
+<a href="#pricing">Fees</a>
 <a href="#results">Results</a>
-<a href="#tests">Online Test</a>
+<a href="#current">Current Affairs</a>
 <a href="#notes">Notes</a>
-<a href="#youtube">Video Classes</a>
-<a href="#contact">Enquiry</a>
+<a href="#youtube">Classes</a>
+<a href="#gallery">Gallery</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
 </nav>
 </header><section id="about">
 <div class="card">
 <h2 class="title">हमारे बारे में</h2>
-<p>CSK GS Research Centre SSC और Railway परीक्षाओं के लिए गणित, रीजनिंग और सामान्य अध्ययन की ऑनलाइन तैयारी प्रदान करता है।</p>
+<p>CSK GS Research Centre SSC और Railway प्रतियोगी परीक्षाओं के लिए Math, Reasoning और General Studies की ऑनलाइन तैयारी कराता है। YouTube classes, practice tests, notes और guidance उपलब्ध है।</p>
 </div>
 </section><section id="courses">
 <h2 class="title">Courses</h2>
-<div class="courses">
-<div class="course"><h3>Math</h3><p>SSC और Railway गणित की पूरी तैयारी।</p></div>
-<div class="course"><h3>Reasoning</h3><p>Logical reasoning practice और tricks।</p></div>
-<div class="course"><h3>General Studies</h3><p>History, Geography, Polity और Science।</p></div>
+<div class="grid">
+<div class="course"><h3>SSC Complete Course</h3><p>Math + Reasoning + GS</p></div>
+<div class="course"><h3>Railway Complete Course</h3><p>Full preparation batch</p></div>
+<div class="course"><h3>Math Special Batch</h3><p>Concept + practice</p></div>
+<div class="course"><h3>Reasoning Crash Course</h3><p>Tricks and speed practice</p></div>
+</div>
+</section><section id="pricing">
+<h2 class="title">Course Fees</h2>
+<div class="grid">
+<div class="pricing"><h3>SSC Batch</h3><p>₹999</p></div>
+<div class="pricing"><h3>Railway Batch</h3><p>₹999</p></div>
+<div class="pricing"><h3>Math Batch</h3><p>₹499</p></div>
 </div>
 </section><section id="results">
 <h2 class="title">Selected Students</h2>
-<div class="results">
+<div class="grid">
 <div class="result">Vivek Kumar Paswan</div>
 <div class="result">Lekhraj Prasad</div>
 <div class="result">Chetlal Prasad</div>
 <div class="result">Narendra Kumar</div>
 </div>
-</section><section id="tests">
-<h2 class="title">Simple Online Quiz</h2>
-<div class="card">
-<p>2 + 2 = ?</p>
-<button onclick="checkAnswer(3)">3</button>
-<button onclick="checkAnswer(4)">4</button>
-<button onclick="checkAnswer(5)">5</button>
-<p id="quizResult"></p>
-</div>
+</section><section id="current">
+<h2 class="title">Daily Current Affairs</h2>
+<div id="currentContainer" class="grid"></div>
 </section><section id="notes">
 <h2 class="title">Study Notes</h2>
-<div class="notes" id="notesList"></div>
-<input id="noteName" placeholder="PDF name">
-<input id="noteLink" placeholder="PDF link paste करें">
-<button onclick="addNote()">Add Notes</button>
+<div id="notesContainer" class="grid"></div>
 </section><section id="youtube">
-<h2 class="title">Video Classes</h2>
-<p>यहाँ YouTube वीडियो link paste करके नई क्लास जोड़ सकते हैं।</p><div style="margin-bottom:15px;">
-<a href="https://youtube.com/@cskgs" target="_blank" style="display:inline-block;background:#ff0000;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold">▶ YouTube Channel</a>
-<a href="https://youtube.com/@cskgs?sub_confirmation=1" target="_blank" style="display:inline-block;background:#cc0000;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold;margin-left:10px">Subscribe</a>
-</div><input id="videoLink" placeholder="YouTube video link paste करें">
-<button onclick="addVideo()">Add Video</button><div id="videoContainer" class="youtube"></div>
+<h2 class="title">YouTube Classes</h2>
+<a class="youtube-btn" href="https://youtube.com/@cskgs" target="_blank">▶ Open YouTube Channel</a>
+<div id="playlistContainer" class="playlists"></div><div style="margin-top:30px">
+<input id="loginPass" type="password" placeholder="Admin password">
+<button onclick="loginAdmin()">Admin Login</button>
+</div><div id="adminPanel"><div class="admin-box">
+<h3>1️⃣ YouTube Playlist Manager</h3>
+<input id="playlistLink" placeholder="YouTube playlist link">
+<button onclick="addPlaylist()">Add Playlist</button>
+</div><div class="admin-box">
+<h3>2️⃣ Current Affairs Manager</h3>
+<textarea id="currentText" placeholder="नया current affairs लिखें"></textarea>
+<button onclick="addCurrent()">Add Current Affairs</button>
+</div><div class="admin-box">
+<h3>3️⃣ Notes / PDF Manager</h3>
+<input id="noteTitle" placeholder="PDF title">
+<input id="noteLink" placeholder="PDF link">
+<button onclick="addNote()">Add PDF</button>
+</div><div class="admin-box">
+<h3>4️⃣ Gallery Image Manager</h3>
+<input id="galleryLink" placeholder="Image link">
+<button onclick="addGallery()">Add Image</button>
+</div><div class="admin-box">
+<h3>5️⃣ Course Manager</h3>
+<input id="courseTitle" placeholder="Course name">
+<input id="courseDesc" placeholder="Course description">
+<button onclick="addCourse()">Add Course</button>
+</div><div class="admin-box">
+<h3>6️⃣ Fees / Pricing Manager</h3>
+<input id="priceCourse" placeholder="Course name">
+<input id="priceAmount" placeholder="Course fees">
+<button onclick="addPrice()">Add Price</button>
+</div></div></section><section id="gallery">
+<h2 class="title">Gallery</h2>
+<div class="grid gallery">
+<img src="https://picsum.photos/400/250">
+<img src="https://picsum.photos/401/250">
+<img src="https://picsum.photos/402/250">
+</div>
+</section><section id="admission">
+<h2 class="title">Online Admission Form</h2>
+<div class="card">
+<input placeholder="Student Name">
+<input placeholder="Mobile Number">
+<select>
+<option>Select Course</option>
+<option>SSC</option>
+<option>Railway</option>
+<option>Math</option>
+</select>
+<textarea placeholder="Message"></textarea>
+<button onclick="alert('Form submitted. Contact on WhatsApp for confirmation.')">Submit</button>
+</div>
 </section><section id="contact">
 <div class="card">
-<h2 class="title">Enquiry</h2>
-<input placeholder="नाम">
-<input placeholder="मोबाइल नंबर">
-<textarea placeholder="संदेश"></textarea>
-<p><b>Mobile:</b> 9431935121</p>
-<p><b>Email:</b> chhotanp94@gmail.com</p>
+<h2 class="title">Contact</h2>
+<p><b>Mobile :</b> 9431935121</p>
+<p><b>Email :</b> chhotanp94@gmail.com</p>
 </div>
 </section><a class="whatsapp" href="https://wa.me/919431935121">WhatsApp</a>
 
 <footer>
 <p>© 2026 CSK GS Research Centre</p>
 </footer><script>
-function checkAnswer(ans){
-if(ans===4){
-document.getElementById('quizResult').innerText='Correct!';
+
+const ADMIN_PASSWORD="csk123";
+
+function loginAdmin(){
+let pass=document.getElementById("loginPass").value;
+if(pass===ADMIN_PASSWORD){
+document.getElementById("adminPanel").style.display="block";
 }else{
-document.getElementById('quizResult').innerText='Wrong answer';
+alert("Wrong Password")
 }
 }
 
-function addVideo(){
-let link=document.getElementById('videoLink').value;
-if(!link)return;
-let id="";
-if(link.includes('watch?v=')) id=link.split('watch?v=')[1].split('&')[0];
-if(link.includes('youtu.be/')) id=link.split('youtu.be/')[1];
-
-let videos=JSON.parse(localStorage.getItem('videos')||'[]');
-videos.push(id);
-localStorage.setItem('videos',JSON.stringify(videos));
-loadVideos();
+function addPlaylist(){
+let link=document.getElementById("playlistLink").value;
+if(!link.includes("list="))return;
+let id=link.split("list=")[1].split("&")[0];
+let data=JSON.parse(localStorage.getItem("playlists")||"[]");
+data.push(id);
+localStorage.setItem("playlists",JSON.stringify(data));
+loadPlaylists();
 }
 
-function loadVideos(){
-let container=document.getElementById('videoContainer');
+function loadPlaylists(){
+let container=document.getElementById("playlistContainer");
 container.innerHTML="";
-let videos=JSON.parse(localStorage.getItem('videos')||'[]');
-videos.forEach(v=>{
-let iframe=document.createElement('iframe');
-iframe.src='https://www.youtube.com/embed/'+v;
+let data=JSON.parse(localStorage.getItem("playlists")||"[]");
+
+data.forEach(id=>{
+let iframe=document.createElement("iframe");
+iframe.src="https://www.youtube.com/embed/videoseries?list="+id;
 container.appendChild(iframe);
 });
 }
 
+function addCurrent(){
+let text=document.getElementById("currentText").value;
+let data=JSON.parse(localStorage.getItem("current")||"[]");
+data.push(text);
+localStorage.setItem("current",JSON.stringify(data));
+loadCurrent();
+}
+
+function loadCurrent(){
+let box=document.getElementById("currentContainer");
+box.innerHTML="";
+let data=JSON.parse(localStorage.getItem("current")||"[]");
+
+data.forEach(t=>{
+let div=document.createElement("div");
+div.className="current-item";
+div.innerText=t;
+box.appendChild(div);
+});
+}
+
 function addNote(){
-let name=document.getElementById('noteName').value;
-let link=document.getElementById('noteLink').value;
-let notes=JSON.parse(localStorage.getItem('notes')||'[]');
-notes.push({name,link});
-localStorage.setItem('notes',JSON.stringify(notes));
+let title=document.getElementById("noteTitle").value;
+let link=document.getElementById("noteLink").value;
+let data=JSON.parse(localStorage.getItem("notes")||"[]");
+data.push({title,link});
+localStorage.setItem("notes",JSON.stringify(data));
 loadNotes();
 }
 
 function loadNotes(){
-let list=document.getElementById('notesList');
-list.innerHTML="";
-let notes=JSON.parse(localStorage.getItem('notes')||'[]');
-notes.forEach(n=>{
-let div=document.createElement('div');
-div.className='note';
-div.innerHTML='<a href="'+n.link+'" target="_blank">'+n.name+'</a>';
-list.appendChild(div);
+let box=document.getElementById("notesContainer");
+box.innerHTML="";
+let data=JSON.parse(localStorage.getItem("notes")||"[]");
+
+data.forEach(n=>{
+let div=document.createElement("div");
+div.className="note";
+div.innerHTML="<b>"+n.title+"</b><br><a href='"+n.link+"' target='_blank'>Open PDF</a>";
+box.appendChild(div);
 });
 }
 
-loadVideos();
+loadPlaylists();
+loadCurrent();
 loadNotes();
+
 </script></body>
 </html>
